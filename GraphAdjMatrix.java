@@ -32,7 +32,7 @@ public class GraphAdjMatrix implements Graph{
         }
 
         edges.sort(Edge::compareTo);
-        for (Edge edge : edges ){
+        for (Edge edge:edges ){
             if (d.find(edge.a[0]) != d.find(edge.a[1])){
                 d.union(edge.a[0], edge.a[1]);
                 TBU.add(edge);
